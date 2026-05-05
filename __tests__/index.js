@@ -1,8 +1,9 @@
 import { Parser } from "../src/Parser.js";
 import literalsTest from "./literals-test.js";
+import statementListTest from "./statement-list-test.js";
 import assert from "assert";
 
-const tests = [literalsTest];
+const tests = [literalsTest, statementListTest];
 
 const parser = new Parser();
 
