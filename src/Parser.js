@@ -25,10 +25,8 @@ export class Parser {
   Literal() {
     switch (this._lookahead.type) {
       case "NUMBER":
-        console.log("NUMBER");
         return this.NumericLiteral();
       case "STRING":
-        console.log("STRING");
         return this.StringLiteral();
     }
     throw new SyntaxError("Literal: unexpected literal production");

@@ -2,7 +2,17 @@ import { Parser } from "../src/Parser.js";
 
 const parser = new Parser();
 
-const program = `"hello"`;
+const program = `
+
+  /**
+   * Docs comment:
+   */
+  "hello";
+
+  // Number:
+  42;
+
+`;
 
 const ast = parser.parse(program);
 
