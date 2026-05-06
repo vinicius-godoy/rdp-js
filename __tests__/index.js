@@ -23,5 +23,5 @@ function test(program, expected) {
 }
 
 exec();
-// tests.forEach((testRun) => testRun(test));
-// console.log("All assertions passed!");
+tests.forEach((testRun) => testRun(test));
+console.log("All assertions passed!");
